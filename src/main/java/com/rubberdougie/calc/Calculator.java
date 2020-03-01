@@ -33,7 +33,7 @@ public class Calculator {
 				Integer.parseInt(token.substring(operatorIndex + 1, token.length())), operator);
 
 		try {
-			if (!result.equals(null)) {
+			if ((result != null)) {
 				System.out.println(result);
 			}
 		} catch (NullPointerException e) {
@@ -51,7 +51,7 @@ public class Calculator {
 	}
 
 	static int getOperatorIndex(String input) {
-		List<Character> operators = new ArrayList<Character>(List.of('+', '-', 'x', '*', '/', '%'));
+		List<Character> operators = new ArrayList<>(List.of('+', '-', 'x', '*', '/', '%'));
 
 		for (; !operators.contains(input.charAt(index)); index++) {
 
@@ -109,15 +109,15 @@ public class Calculator {
 	}
 
 	static long plus(int arg1, int arg2) {
-		return arg1 + arg2;
+		return (long) arg1 + arg2;
 	}
 
 	static long minus(int arg1, int arg2) {
-		return arg1 - arg2;
+		return (long) arg1 - arg2;
 	}
 
 	static long times(int arg1, int arg2) {
-		return arg1 * arg2;
+		return (long) arg1 * arg2;
 	}
 
 	static long dividedBy(int arg1, int arg2) throws Exception {
