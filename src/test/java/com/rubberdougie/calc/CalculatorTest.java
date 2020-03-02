@@ -16,8 +16,6 @@ class CalculatorTest {
 
 	final Calculator calculator = new Calculator();
 
-	// @Test void testGetInput() { fail("Not yet implemented"); }
-
 	@DisplayName("Test extraction of the operator")
 	@Test
 	void testGetOperatorIndex() {
@@ -38,16 +36,7 @@ class CalculatorTest {
 			assertEquals(arguments.getLong(0),
 					Calculator.evaluate(arguments.getInteger(1), arguments.getInteger(2), arguments.getCharacter(3)));
 		}
-
 	}
-	/*
-	 * void testEvaluate() { assertEquals(4, Calculator.evaluate(2, 2, '+'));
-	 * assertEquals(2, Calculator.evaluate(5, 3, '-')); assertEquals(6,
-	 * Calculator.evaluate(3, 2, 'x')); assertEquals(6, Calculator.evaluate(3, 2,
-	 * '*')); assertEquals(4, Calculator.evaluate(12, 3, '/')); assertEquals(null,
-	 * Calculator.evaluate(12, 0, '/')); assertEquals(3, Calculator.evaluate(7, 4,
-	 * '%')); assertEquals(null, Calculator.evaluate(12, 0, '%')); }
-	 */
 
 	@Test
 	void testFailureEvaluate() {
