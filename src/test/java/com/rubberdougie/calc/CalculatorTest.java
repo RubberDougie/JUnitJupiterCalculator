@@ -28,7 +28,6 @@ class CalculatorTest {
 	@ParameterizedTest
 	@CsvSource({ "4,2,2,+", "2,5,3,-", "6,3,2,x", "6,3,2,*", "4,12,3,/", "null,12,0,/", "3,7,4,%", "null,12,0,%" })
 	void testEvaluate(ArgumentsAccessor arguments) {
-
 		if (arguments.getString(0).equals("null")) {
 			assertEquals(null,
 					Calculator.evaluate(arguments.getInteger(1), arguments.getInteger(2), arguments.getCharacter(3)));
@@ -70,5 +69,4 @@ class CalculatorTest {
 	void testModulo() throws Exception {
 		assertEquals(3, Calculator.modulo(7, 4));
 	}
-
 }

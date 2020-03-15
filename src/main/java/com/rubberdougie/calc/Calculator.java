@@ -1,5 +1,6 @@
 package com.rubberdougie.calc;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,6 +11,7 @@ public class Calculator {
 
 	public static void main(String[] args) {
 
+		BigInteger biggie = new BigInteger("5");
 		/*
 		 * private void validate(String input) { String decimalRegex =
 		 * "-?((\\d*\\.\\d+)|(\\d+))"; String operatorsRegex = "[-+*x\\/]"; String
@@ -74,7 +76,7 @@ public class Calculator {
 			break;
 		}
 
-		case 'x': {
+		case 'x': { // make sure case '*' is next
 		}
 
 		case '*': {
