@@ -1,0 +1,9 @@
+Requirements:
+	Make sure your IDE has JUnit 5 (Jupiter) support.
+	
+	Guide: Download Eclipse IDE with Java support, Install the plug-in "Maven Integration" and install Maven on your machine.
+
+Purpose:
+	Simple integer calculator used to practice unit tests with JUnit Jupiter (JUnit 5).
+
+How to run: type "mvn test" in the console at the projects root directory.
